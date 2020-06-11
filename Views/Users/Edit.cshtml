@@ -1,0 +1,12 @@
+﻿@model UserDataModel
+
+<form action="/Users/Edit" method="post">
+    <div class="text-center">
+        <h1 class="display-3">Welcome @Model.Name</h1>
+
+        <h1 class="display-4">Your Email:</h1>
+        @Html.TextBoxFor(m => m.EmailAddress)
+
+        <input type="submit" value="Save" class="btn btn-default" />
+    </div>
+</form>

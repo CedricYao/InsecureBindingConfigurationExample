@@ -1,0 +1,14 @@
+﻿@model UserDataModel
+
+<div class="text-center">
+    <h1 class="display-3">Welcome @Model.Name</h1>
+    <h1 class="display-4">Your Email is: @Model.EmailAddress</h1>
+    @if (Model.IsAdmin)
+    {
+        <h2>You are an ADMIN, do all the things!</h2>
+    }
+    else
+    {
+        <h2>You are not an admin. That means you must request a ServiceNow ticket.</h2>
+    }
+</div>
